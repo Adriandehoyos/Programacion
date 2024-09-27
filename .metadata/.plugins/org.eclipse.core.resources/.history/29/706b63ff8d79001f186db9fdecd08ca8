@@ -1,0 +1,13 @@
+package com.decroly.daw;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hola Mundo!!!!");
+		System.out.println("Hola Decroly DAW");
+		String text1 = "¿Como te llamas" ;
+		String tex2 = "Paco" ;
+	}
+
+}

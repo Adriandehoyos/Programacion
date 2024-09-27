@@ -1,0 +1,16 @@
+package com.decroly.daw;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("Buenos Dias");
+		int lado1 = 5;
+		System.out.println("El area del cuadrado es "+(lado1 * lado1));
+		
+		String lado2 = "lado del cuadrado";
+		
+	}
+
+}

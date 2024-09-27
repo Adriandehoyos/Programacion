@@ -1,0 +1,19 @@
+package com.decroly.daw;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("Buenos Dias");
+		int lado1 = 5;
+		System.out.println("El area del cuadrado es "+(lado1 * lado1));
+		
+		Scanner reader = new Scanner(System.in);
+		System.out.println("Introduce el lado");
+		Int lado = reader.nextInt();
+	}
+
+}
