@@ -68,7 +68,7 @@ public class Main {
 		
 		//ejercicio 8
 		
-		System.out.println("Introduce el primer numero");
+	/*	System.out.println("Introduce el primer numero");
 		double numero1 = reader.nextDouble();
 		
 		System.out.println("Introduce el segundo numero");
@@ -113,10 +113,29 @@ public class Main {
 		double ultima = Math.max(tres, primero);
 		
 		System.out.println("El numero mayor es: " + ultima);
-		
+	*/	
 		//ejercicio 11
 		
-				
+		reader = new Scanner(System.in);
+		
+		System.out.println("Introduce el Primer numero: "); 
+		double xx = reader.nextDouble();
+			
+		System.out.println("Introduce el segundo numero que no sea cero: ");
+		double yy = reader.nextDouble();
+		
+		boolean cero = yy == 0;
+		
+		System.out.println(cero +" has puesto cero");
+		System.out.println("La suma es: "+(xx + yy));
+		System.out.println("La resta es: "+(xx - yy));
+		System.out.println("El producto es: "+(xx * yy));
+		System.out.println("La division es: "+(xx / yy));		
+		
+		//ejercicio 12
+		
+		
+		
 	}
 	
 	
