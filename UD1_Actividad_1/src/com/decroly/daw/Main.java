@@ -8,67 +8,67 @@ public class Main {
 		// TODO Auto-generated method stub
 		//Ejercicio 1
 		
-	//	System.out.println("Buenos Dias");
+		System.out.println("Buenos Dias");
 		
 		//Ejercicio 2
 		
-	//	int lado1 = 5;
-	//	System.out.println("El area del cuadrado es: "+(lado1 * lado1));
+		int lado1 = 5;
+		System.out.println("El area del cuadrado es: "+(lado1 * lado1));
 		
 		//Ejercicio 3
 		
 		Scanner reader = new Scanner(System.in);
-	//	System.out.println("Introduce el lado: ");
-	//	double lado = reader.nextDouble();
-	//	System.out.println("El area del cuadrado es: "+(lado * lado));
+		System.out.println("Introduce el lado: ");
+		double lado = reader.nextDouble();
+		System.out.println("El area del cuadrado es: "+(lado * lado));
 		
 		//Ejercicio 4
 	
-	//	System.out.println("Introduce el Primer numero: "); 
-	//	double x = reader.nextDouble();
+		System.out.println("Introduce el Primer numero: "); 
+		double x = reader.nextDouble();
 		
-	//	System.out.println("Introduce el segundo numero: ");
-	//	double y = reader.nextDouble();
+		System.out.println("Introduce el segundo numero: ");
+		double y = reader.nextDouble();
 	
-	//	System.out.println("La suma es: "+(x + y));
-	//	System.out.println("La resta es: "+(x - y));
-	//	System.out.println("El producto es: "+(x * y));
-	//	System.out.println("La division es: "+(x / y));
+		System.out.println("La suma es: "+(x + y));
+		System.out.println("La resta es: "+(x - y));
+		System.out.println("El producto es: "+(x * y));
+		System.out.println("La division es: "+(x / y));
 		
 		//Ejercicio 5
 		
-	//	reader = new Scanner(System.in);
-	//	System.out.println("Introduce el radio: ");
-	//	double radio = reader.nextDouble();
+		reader = new Scanner(System.in);
+		System.out.println("Introduce el radio: ");
+		double radio = reader.nextDouble();
 		
-	//	System.out.println("La longitud de la cirfunferencia es: "+(2 * Math.PI * radio ));
+		System.out.println("La longitud de la cirfunferencia es: "+(2 * Math.PI * radio ));
 		
-	//	System.out.println("el área es: "+(Math.PI * Math.pow(radio, 2)));
+		System.out.println("el área es: "+(Math.PI * Math.pow(radio, 2)));
 		
-	//	System.out.println("el volumen es: "+((4.0/3.0) * Math.PI * Math.pow(radio, 3)));
+		System.out.println("el volumen es: "+((4.0/3.0) * Math.PI * Math.pow(radio, 3)));
 		
 		//Ejercicio 6
 		
-	//	System.out.println("Introduce el precio del articulo");
-	//	double precioventa = reader.nextDouble();
+		System.out.println("Introduce el precio del articulo");
+		double precioventa = reader.nextDouble();
 		
-	//	System.out.println("Introduce el precio real de venta");
-	//	double precioreal = reader.nextDouble();
+		System.out.println("Introduce el precio real de venta");
+		double precioreal = reader.nextDouble();
 		
-	//	System.out.println("El descuento realizado es: "+((precioventa - precioreal) / precioventa * 100 + "%"));
+		System.out.println("El descuento realizado es: "+((precioventa - precioreal) / precioventa * 100 + "%"));
 		
 		//ejercicio 7
 		
-	//	reader = new Scanner(System.in);
+		reader = new Scanner(System.in);
 		
-	//	System.out.println("introduce la cantidad de millas marinas");
-	//	double millas = reader.nextDouble();
+		System.out.println("introduce la cantidad de millas marinas");
+		double millas = reader.nextDouble();
 		
-	//	System.out.println("Son esta cantidad de metros: " + (millas * 1852));
+		System.out.println("Son esta cantidad de metros: " + (millas * 1852));
 		
 		//ejercicio 8
 		
-	/*	System.out.println("Introduce el primer numero");
+		System.out.println("Introduce el primer numero");
 		double numero1 = reader.nextDouble();
 		
 		System.out.println("Introduce el segundo numero");
@@ -113,7 +113,7 @@ public class Main {
 		double ultima = Math.max(tres, primero);
 		
 		System.out.println("El numero mayor es: " + ultima);
-	*/	
+		
 		//ejercicio 11
 		
 		reader = new Scanner(System.in);
@@ -134,7 +134,24 @@ public class Main {
 		
 		//ejercicio 12
 		
+		reader = new Scanner(System.in);
 		
+		System.out.println("Introduce el primer numero");
+		double pri = reader.nextDouble();
+		
+		System.out.println("Introduce el segundo numero");
+		double seg = reader.nextDouble();
+		
+		double resultado = Math.max(pri, seg);
+		
+		System.out.println("El mayor es: " + resultado);
+		
+		//ejercicio 13
+		
+		System.out.println("Introduce un numero");
+		double unico = reader.nextDouble();
+		
+		System.out.println("el numero es positivo: "+ (unico>= 02));
 		
 	}
 	
