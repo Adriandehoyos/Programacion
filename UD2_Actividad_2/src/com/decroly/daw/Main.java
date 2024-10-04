@@ -120,26 +120,62 @@ public class Main {
 			System.out.println("El factorial de "+ N +" es "+ factorial);
 		}
 		
-		*/
+		
 		//ejercicio 9
 		
 		reader = new Scanner(System.in);
 		
-		int horas;
-		int mins;
-		int segun;
 		
 		System.out.println("Introduce las Horas: ");
-		horas = reader.nextInt();
+		int horas = reader.nextInt();
 		
 		System.out.println("Introduce los minutos: ");
-		mins = reader.nextInt();
+		int mins = reader.nextInt();
 		
 		System.out.println("Introduce los segundos: ");
-		segun = reader.nextInt();
+		int segun = reader.nextInt();
 		
+		segun++;
 		
+		 if (segun == 60) {
+             segun = 0;
+             mins++;
+         }
+
+         if (mins == 60) {
+             mins = 0;
+             horas++;
+         }
+
+         if (horas == 24) {
+             horas = 0;
+         }
 		
+         System.out.println("La Hora es:"+horas+":"+mins+":"+segun );
+      
+         */
+         
+         //ejercicio 10
+		
+		reader = new Scanner(System.in);
+		
+		System.out.println("Ingrese 10 números no nulos:");
+		
+		int contador = 0;
+		
+		while(contador <= 10) {
+			System.out.println("Escribe un numero:");
+			int nonulo = reader.nextInt();
+			contador ++;
+			
+			if(nonulo == 0) {
+				System.out.println("numero no valido");
+				continue;
+			}else if(nonulo<0) {
+				System.out.println("Hay al menos un numero negativo.");			}
+			
+		
+		}
 	}//
 
 }//
