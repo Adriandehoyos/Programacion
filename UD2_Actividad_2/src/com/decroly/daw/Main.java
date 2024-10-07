@@ -153,7 +153,7 @@ public class Main {
 		
          System.out.println("La Hora es:"+horas+":"+mins+":"+segun );
       
-         */
+         
          
          //ejercicio 10
 		
@@ -162,20 +162,107 @@ public class Main {
 		System.out.println("Ingrese 10 números no nulos:");
 		
 		int contador = 0;
+		int negativo = 0;
+		int positivo = 0;
 		
-		while(contador <= 10) {
+		
+		while(contador < 10) {
 			System.out.println("Escribe un numero:");
 			int nonulo = reader.nextInt();
-			contador ++;
+			
 			
 			if(nonulo == 0) {
 				System.out.println("numero no valido");
 				continue;
 			}else if(nonulo<0) {
-				System.out.println("Hay al menos un numero negativo.");			}
-			
-		
+				negativo++;
+				contador++;
+			}else{
+				positivo++;
+				contador++;
+			}
 		}
+		
+		if(negativo>= 1) {
+			System.out.println("Hay al menos un numero negativo");
+		}else if(negativo ==0){
+			System.out.println("No hay numeros negativos");
+		}
+		
+		
+		//ejercicio11
+		
+			reader = new Scanner(System.in);
+		
+				System.out.println("Ingrese 10 números no nulos:");
+				
+				contador = 0;
+				negativo = 0;
+				positivo = 0;
+				
+				
+				while(contador < 10) {
+					System.out.println("Escribe un numero:");
+					int nonulo = reader.nextInt();
+					
+					
+					if(nonulo == 0) {
+						System.out.println("numero no valido");
+						continue;
+					}else if(nonulo<0) {
+						negativo++;
+						contador++;
+					}else{
+						positivo++;
+						contador++;
+					}
+				}
+				
+				System.out.println("Has introducido "+negativo+" numeros negativos" );
+				System.out.println("Has introducido "+positivo+" numeros positivos" );
+		
+		//ejercicio 12		
+		
+		reader = new Scanner(System.in);
+			
+		int nocero = 0;
+		int positivo1= 0;
+		int negativo1 = 0;		
+		
+			do {
+				System.out.println("Introduce un numero");
+				nocero = reader.nextInt();
+				
+				if(nocero<0) {
+					negativo1++;
+				}else {
+					positivo1++;
+				}
+			}
+			
+			while(nocero != 0);			
+			
+			System.out.println("Has introducido "+negativo1+" numeros negativos" );
+			System.out.println("Has introducido "+positivo1+" numeros positivos" );
+		
+		*/
+		
+		//ejercicio13
+		
+		System.out.println("La suma y el producto de los 10 primeros números naturales");
+		
+		int suma = 0;
+		int producto = 1;
+		
+		for (int i = 1; i <= 10; i++) {
+		
+			suma += i;
+			producto *= i;
+		}
+		
+		System.out.println("La suma es: "+ suma);
+		System.out.println("El producto es: "+ producto);
+		
 	}//
 
 }//
