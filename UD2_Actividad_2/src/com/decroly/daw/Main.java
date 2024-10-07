@@ -9,7 +9,7 @@ public class Main {
 		
 		//ejercicio 1
 		Scanner reader = new Scanner(System.in);
-	/*	System.out.println("Introduce la edad: ");
+		System.out.println("Introduce la edad: ");
 		int edad = reader.nextInt();
 
 		if (edad>= 18)
@@ -245,7 +245,7 @@ public class Main {
 			System.out.println("Has introducido "+negativo1+" numeros negativos" );
 			System.out.println("Has introducido "+positivo1+" numeros positivos" );
 		
-		*/
+		
 		
 		//ejercicio13
 		
@@ -262,6 +262,51 @@ public class Main {
 		
 		System.out.println("La suma es: "+ suma);
 		System.out.println("El producto es: "+ producto);
+		
+		
+		
+		//ejercicio 14
+		
+		reader = new Scanner(System.in);
+		
+		int horasextra;
+		double salariobruto;
+		double impuestos=0;
+		
+		
+		System.out.println("¿Cuanto te pagan a la hora?");
+		double tarifa = reader.nextDouble();
+		
+		System.out.println("¿Cuantas horas trabajas?");
+			int horas1 = reader.nextInt();
+			
+			if(horas1 <= 35) {
+				salariobruto=horas1* tarifa;
+			}else {
+				horasextra = horas1 -35;
+				salariobruto = horasextra * 1.5 *tarifa + tarifa * 35;
+			}
+			
+		System.out.println("El salario bruto es: "+salariobruto);	
+			
+			if(salariobruto>500) {
+				impuestos += (salariobruto-500)*0.25;
+			}else if(salariobruto>900) {
+				
+				impuestos = (salariobruto -900) * 0.45;
+				impuestos += 400 * 0.25;							
+			}
+		
+		double	salarioneto = salariobruto - impuestos;
+		System.out.println("El salario neto es: "+salarioneto);	
+					
+		
+		
+		
+		
+		
+		
+		
 		
 	}//
 
