@@ -11,6 +11,18 @@ public class Main {
 		
 		//ejercicio 1
 		
+		int quinientos = 0;
+		int doscientos =0;
+		int cien = 0;
+		int cincuenta = 0;
+		int veinte = 0;
+		int diez = 0;
+		int cinco =0;
+		
+		System.out.println("Introduce la cantidad de dinero: ");
+		int dinero = reader.nextInt();
+		
+		
 		
 		
 		
@@ -22,6 +34,9 @@ public class Main {
 		
 				
 		do{
+			reader = new Scanner(System.in);
+			
+			
             System.out.println("1 - Sumar");
             System.out.println("2 - Restar");
             System.out.println("3 - Multiplicar");
