@@ -22,7 +22,58 @@ public class Main {
 		System.out.println("Introduce la cantidad de dinero: ");
 		int dinero = reader.nextInt();
 		
+		if (dinero % 5 != 0) {
+            System.out.println("La cantidad debe ser un múltiplo de 5.");  
+		}
+		int resto = dinero;
 		
+		  if (resto >= 500) {
+	            quinientos = resto / 500;
+	            resto = resto % 500;
+	            System.out.println(quinientos + " billete(s) de 500€");
+	        }
+	        
+	        
+	        if (resto >= 200) {
+	            doscientos = resto / 200;
+	            resto = resto % 200;
+	            System.out.println(doscientos + " billete(s) de 200€");
+	        }
+
+	        
+	        if (resto >= 100) {
+	            cien = resto / 100;
+	            resto = resto % 100;
+	            System.out.println(cien + " billete(s) de 100€");
+	        }
+
+	        
+	        if (resto >= 50) {
+	            cincuenta = resto / 50;
+	            resto = resto % 50;
+	            System.out.println(cincuenta + " billete(s) de 50€");
+	        }
+
+	       
+	        if (resto >= 20) {
+	            veinte = resto / 20;
+	            resto = resto % 20;
+	            System.out.println(veinte + " billete(s) de 20€");
+	        }
+
+	        
+	        if (resto >= 10) {
+	           diez = resto / 10;
+	            resto = resto % 10;
+	            System.out.println(diez + " billete(s) de 10€");
+	        }
+
+	        
+	        if (resto >= 5) {
+	            cinco = resto / 5;
+	            resto = resto % 5;
+	            System.out.println(cinco + " billete(s) de 5€");
+	        }
 		
 		
 		
