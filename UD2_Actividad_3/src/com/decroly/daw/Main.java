@@ -25,6 +25,7 @@ public class Main {
 		if (dinero % 5 != 0) {
             System.out.println("La cantidad debe ser un múltiplo de 5.");  
 		}
+		
 		int resto = dinero;
 		
 		  if (resto >= 500) {
