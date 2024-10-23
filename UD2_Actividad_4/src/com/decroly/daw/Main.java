@@ -9,7 +9,7 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		Scanner reader = new Scanner(System.in);
-	/*	
+/*		
 		//ejercicio1
 		
 		double[] nums = new double[10];
@@ -62,7 +62,7 @@ public class Main {
 		double minimo = vector1[0];
 		
 		
-		for(i = 0; i < vector1.length; i++) {
+		for(int i = 0; i < vector1.length; i++) {
 					
 			maximo= Math.max(vector1[i], maximo);
 			minimo= Math.min(vector1[i], minimo);
@@ -143,7 +143,7 @@ public class Main {
 		for(int i = 0; i < n; i++)
 			System.out.println(vector4[i]+ "");
 		
-*/		
+		
 		//ejercicio 7
 		
 		reader = new Scanner(System.in);
@@ -158,14 +158,122 @@ public class Main {
 			System.out.println("El valor P tiene que ser menor que Q");
 		}else {
 			int array = Q - P;
-			int vector[] = new int[array];
-			for(int i = 0; i < vector.length; i++)
-				//sin acabar
+			int vector5[] = new int[array];
+			for(int i = 0; i < array; i++) {
 			
-		System.out.println("El array de la diferencia de P y Q es: ");	
-			for(int i = 0; i < vector.length; i++)
-				System.out.println(vector[i]+ "");
+			vector5[i]= P + i;
+		System.out.println("El array desde P hasta Q es: " + vector5[i]);	
+			}
 		}
+		
+		//ejercicio 8
+		
+		reader = new Scanner(System.in);
+		int contador = 0;
+
+		double vector6[] = new double[100];
+		
+		System.out.println("Dame un numero entre el 0.0 y el 1.0");
+		double R = reader.nextDouble();
+		
+		
+		for(int i = 0; i < vector6.length; i++) {
+			vector6[i] = Math.random();
+		
+				if(vector6[i] >= R) {
+					contador++;
+				}
+		}
+		System.out.println("Hay "+ contador+ "numeros mayores o iguales que "+R);
+		
+		
+		//ejercicio 9
+		
+		reader = new Scanner(System.in);
+		
+		
+		System.out.println("Dame un valor entre 1 y 10");
+		int N = reader.nextInt();
+		boolean existe = false;
+		
+		int vector7[] = new int[100];
+		for(int i = 0; i < vector7.length; i++) {
+			vector7[i] = (int)(1+Math.random()*10);
+			
+			if(vector7[i] == N) {
+				existe = true;
+				System.out.println("Aparece en la posicion "+ i);
+			}
+		}
+		
+		//ejercicio 10
+		
+		reader = new Scanner(System.in);
+		
+		System.out.println("Introduce el numero de personas");
+		int N2 = reader.nextInt();
+		
+		double alturas[] = new double[N2];
+		for(int i = 0; i < N2; i++) {
+			System.out.println("Introduce la altura de la persona");
+			 alturas[i] = reader.nextDouble();
+		}
+		
+		double suma_altura = 0.0;
+		double alturamax = alturas[0];
+		double alturamin = alturas[0];
+		
+		for(int i = 0; i < N2; i++) {
+			suma_altura += alturas[i];
+			if(alturamax < alturas[i]){
+				alturamax = alturas[i];
+			}
+			if(alturamin > alturas[i]){
+				alturamin = alturas[i];
+			}
+		}
+		
+		double media2 = suma_altura /N2;
+		
+		double Emedia = 0;
+		double Dmedia = 0;
+		
+		for(int i = 0; i < N2; i++) {
+			if(alturas[i] > media2) {
+				Emedia++;
+			}else {
+				Dmedia++;
+			}
+		}
+		
+		System.out.println("La altura media es: " + media2);
+        System.out.println("La altura maxima es: " + alturamax);
+        System.out.println("La altura minima es: " + alturamin);
+        System.out.println("Hay " + Emedia + " personas por encima de la media de altura");
+        System.out.println("Hay " + Dmedia + " personas por debajo de la media de altura");
+    */    
+		//ejercicio 11
+		
+		System.out.println("Primer array");
+		int vector8[] = new int[100];
+		for(int i = 0; i < vector8.length; i++) {
+			vector8[i]=i+1;
+			System.out.println(vector8[i]+"");
+		}
+		
+		System.out.println("Segundo array");
+		
+		int alreves[] = new int[100];
+		for(int i = 0; i < alreves.length; i++) {
+			alreves[i] = vector8[100 -1 -i];
+			System.out.println(alreves[i]+"");
+		}
+		
+		
+		
+		
+		
+		
 		
 		
 	}//
