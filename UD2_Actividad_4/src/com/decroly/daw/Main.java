@@ -9,7 +9,7 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		Scanner reader = new Scanner(System.in);
-/*		
+		
 		//ejercicio1
 		
 		double[] nums = new double[10];
@@ -251,7 +251,7 @@ public class Main {
         System.out.println("La altura minima es: " + alturamin);
         System.out.println("Hay " + Emedia + " personas por encima de la media de altura");
         System.out.println("Hay " + Dmedia + " personas por debajo de la media de altura");
-    */    
+        
 		//ejercicio 11
 		
 		System.out.println("Primer array");
@@ -269,11 +269,90 @@ public class Main {
 			System.out.println(alreves[i]+"");
 		}
 		
+		//ejercicio 12
+		
+		int enteros[] = new int[10];
+		
+		String menu;
+		
+		do {
+	     	reader  = new Scanner(System.in);
+			
+			System.out.println("a. Mostrar valores");
+			System.out.println("b. Introducir valor");
+			System.out.println("c. salir");
+			menu = reader.nextLine();
+			
+			if(menu.equals("a")){
+				 
+			     for (int i = 0; i < enteros.length; i++) {
+		    			 
+			    	 System.out.println("El valor del numero "+(i+1) + " es "+ enteros[i] );
+			    	 
+			     }
+				
+				 
+	         }else if(menu.equals("b"))
+	         {
+	        	 System.out.print("Introduce la posición (0-9): ");
+                 int posicion = reader.nextInt();
+                 System.out.print("Introduce el valor: ");
+                 int valor = reader.nextInt();
+
+                 
+                 if (posicion >= 0 && posicion < enteros.length) {
+                     enteros[posicion] = valor;
+                     System.out.println("Valor " + valor + " introducido en la posición " + posicion);
+                 }else {
+                	 System.out.println("posicion no valida, debe estar entre 0 y 9,");
+                 }
+                 
+                 
+	        	 }else if(menu.equals("c")){
+	        	 System.out.println("Hasta pronto");
+	        	 
+	         }else { 
+	        	 System.out.println("Añade una opcion que sea correcta en el menu");
+	         }
+			
+	     }while(!menu.equals("c"));
 		
 		
+		//ejercicio 13
 		
+		reader  = new Scanner(System.in);
 		
+		System.out.println("Dame un valor inicial");
+		int V = reader.nextInt();
 		
+		System.out.println("Dame un valor para los intervalos");
+		int I = reader.nextInt();
+		
+		System.out.println("Numero de valores a crear");
+		int N3 = reader.nextInt();
+		
+		int vector9[] = new int[N3];
+		
+		for(int i = 0; i < vector9.length; i++) {
+			System.out.println("El array resultante es: "+ (V+i*I));
+		}
+		
+		//ejercicio 14
+		
+		int vector10[] = new int[55];
+		int valores = 0;
+		
+		for (int i = 1; i <= 10; i++) { 
+	           for (int x = 0; x < i; x++){
+	                vector10[valores] = i;
+	                valores++;
+	            }
+	        }
+	             
+	    System.out.println("Los valores son: "); 
+			for(int i : vector10) {
+				System.out.println(i+"");
+			}
 		
 		
 	}//
