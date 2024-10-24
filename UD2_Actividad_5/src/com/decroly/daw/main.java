@@ -1,16 +1,24 @@
 package com.decroly.daw;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.Scanner;
 
 =======
 >>>>>>> 15ff76c6cc1764535b77d3613362acbe59d5b937
+=======
+import java.util.Scanner;
+
+>>>>>>> 387af54418930013103c10754eff0903fa11b0c5
 public class main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 387af54418930013103c10754eff0903fa11b0c5
 		Scanner reader = new Scanner(System.in);
 	/*	
 		//ejercicio 1
@@ -58,6 +66,7 @@ public class main {
 		
 		
 	}//
+<<<<<<< HEAD
 
 }//
 =======
@@ -65,3 +74,7 @@ public class main {
 
 }
 >>>>>>> 15ff76c6cc1764535b77d3613362acbe59d5b937
+=======
+
+}//
+>>>>>>> 387af54418930013103c10754eff0903fa11b0c5
