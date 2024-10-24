@@ -39,9 +39,17 @@ public class main {
 	*/	
 		//ejercicio 3
 		
+		reader = new Scanner(System.in);
 		
 		
+		System.out.println("Introduce tu nombre: ");
+		String nombre = reader.nextLine();
 		
+		System.out.println("Introduce tu primer apellido: ");
+		String apellido = reader.nextLine();
+		
+		System.out.println("Introduce tu segundo apellido: ");
+		String apellido2 = reader.nextLine();
 		
 		
 		
