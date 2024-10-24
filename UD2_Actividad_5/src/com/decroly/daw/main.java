@@ -37,7 +37,7 @@ public class main {
 		}else {
 			System.out.println("La cadena 2 y la 2 no son iguales");
 		}
-	*/	
+		
 		//ejercicio 3
 		
 		reader = new Scanner(System.in);
@@ -52,8 +52,43 @@ public class main {
 		System.out.println("Introduce tu segundo apellido: ");
 		String apellido2 = reader.nextLine();
 		
+		String concatenacion = nombre.substring(0,3)
+                + apellido.substring(0,3)
+                + apellido2.substring(0,3);
 		
+		System.out.println("El codigo del usuario es: " + concatenacion.toUpperCase());
 		
+	*/	
+		//ejercicio4
+		reader = new Scanner(System.in);
+		
+		 System.out.println("Introduce una frase: ");
+	        String frase = reader.nextLine().toLowerCase();
+	        int a = 0; 
+	        int e = 0;
+	        int i = 0;
+	        int o = 0;
+	        int u = 0;
+	        
+	        
+	        for (char c : frase.toCharArray()) {
+	            if (c == 'a'){
+	                a ++;
+	            } else if (c == 'e'){
+	                e ++;
+	            } else if (c == 'i'){
+	                i ++;
+	            } else if (c == 'o'){
+	                o ++;
+	            } else if(c == 'u'){
+	                u ++;
+	            }
+	        }
+	        System.out.println("Hay " + a + " a en la frase");
+	        System.out.println("Hay " + e + " e en la frase");
+	        System.out.println("Hay " + i + " i en la frase");
+	        System.out.println("Hay " + o + " o en la frase");
+	        System.out.println("Hay " + u + " u en la frase");
 	}//
 
 
