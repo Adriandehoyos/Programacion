@@ -19,7 +19,7 @@ public class main {
 		for(String palabra : palabras) {
 			System.out.println(palabra);
 		}
-	*/	
+		
 		//ejercicio 2
 		
 		reader = new Scanner(System.in);
@@ -36,6 +36,13 @@ public class main {
 		}else {
 			System.out.println("La cadena 2 y la 2 no son iguales");
 		}
+	*/	
+		//ejercicio 3
+		
+		
+		
+		
+		
 		
 		
 	}//
